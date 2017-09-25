@@ -1,0 +1,323 @@
+/* Block General */
+* {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+
+*::selection {
+    background: #82ca9c;
+}
+
+p {
+	color: #ffffff;
+	line-height: 2;
+}
+
+a:hover {
+	color: #82ca9c;
+	text-decoration: none;
+}
+
+h1 {
+	color: #ffffff;
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 35px;
+}
+
+h3 {
+	font-size: 22.53px;
+	margin-bottom: 15px;
+}
+
+h1, h2, h3 {
+	font-weight: 300;
+	margin-bottom: 30px;
+	line-height: 1.2;
+}
+
+/* Block Header */
+.banner {
+	background-image: url('../img/banner.png');
+	height: 951px;
+	background-position-x: 60%;
+	background-position-y: 90%;  
+}
+
+.banner, .car {
+	position: relative;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.car {
+	background-image: url('../img/car.png');
+	height: 874px;
+}
+
+.logo {
+	margin-top: 55px;
+}
+
+.banner-title {
+	padding-top: 300px;
+}
+
+.iphone img {
+	height: auto;
+	top: 80px;
+	position: relative;
+}
+
+/* Block Main */
+.content {
+	margin-bottom: 30px;
+}
+
+.content h2 {
+	color: #222626;
+}
+
+.content p {
+	color: #959595;
+}
+
+.long-arrow-right {
+	color: #fff;
+	font-weight: 600;
+}
+
+.fa-long-arrow-right {
+	position: relative;
+	top: 2px;
+	left: 7px;
+	display: inline-block;
+	transition: all .2s ease-in-out;
+}
+
+.long-arrow-right:hover .fa-long-arrow-right {
+	left: 14px;
+}
+.something-new, .onboard {
+	padding-bottom: 80px;
+}
+
+.something-new p {
+	color: #959595;
+}
+
+.block-content1.container {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* Block Block-content */
+.block-content {
+	padding-bottom: 80px;
+}
+
+.pink, .purple, .our_client, .violet, .green, .sighup_see, .start-img {
+	height: 280px;
+}
+
+.pink {
+	background: #f5989d
+}
+
+.purple {
+	background: #615f7d;
+}
+
+.our_client, .sighup_see, .start-img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.our_client {
+	background-image: url('../img/our_client.png');
+}
+
+.violet {
+	background: #bd8cbf;
+}
+
+.green {
+	background: #82ca9c;
+}
+
+.sighup_see {
+	background-image: url('../img/sighup_see.png');
+}
+
+.start-img {
+	background-image: url('../img/start_somthing.png');
+}
+
+.block-content__text {
+	padding: 10px 10px;
+}
+
+.block-content__text h3 {
+	color: #ffffff;
+}
+
+/* icon */
+.fa-heart-o {
+	float: right;
+	margin-right: 30px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.fa-windows,
+.fa-apple {
+	font-size: 26px;
+	color: #c5c5c5;
+	margin-right: 15px;
+}
+
+.fa-check {
+	font-size: 30px;
+	color: #ffffff;
+}
+
+
+/* car */
+.car .banner-title{
+	position: absolute;
+	color: #ffffff;
+	background-size: cover;
+	bottom: 15%;
+}
+
+/* onboard */
+.onboard {
+	background-color: #82ca9c;
+	color: #fff;
+	padding: 120px 0;
+}
+
+/* buying */
+.buying {
+	background-color: #f6f7fa;
+	padding: 120px 0;
+}
+
+.buying .row {
+	padding: 0 25px;
+}
+
+.team {
+	padding: 45px 55px;
+}
+
+.team.active {
+	background-color: #fff;
+	box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+}
+
+.legacy,
+.most-popular {
+	color: #fff;
+	border-radius: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 11px;
+	display: inline-block;
+	margin-bottom: 22px;
+	padding: 5px 20px;
+}
+
+.most-popular {
+	background-color: #bd8cbf;
+}
+
+.legacy {
+	background-color: #e1e1e1;
+}
+
+.buying h2 {
+	margin-bottom: 10px;
+}
+
+.buying p {
+	color: #8a9ead;
+	margin-bottom: 25px;
+}
+
+.buy-button {
+	background-color: #82ca9c;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 1px;
+	display: block;
+	width: 150px;
+	padding: 14px 22px;
+	border-radius: 3px;
+	margin-bottom: 30px;
+}
+
+.buy-button:hover {
+	background-color: #72bd8d;
+	color: #fff;
+	border-color: transparent;
+	box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+}
+
+/* footer */
+footer {
+	background-color: #192431;
+	padding: 140px 0 110px;
+}
+
+footer p {
+	color: #f6f7fa;
+	font-size: 13px;
+}
+
+footer h4 {
+	color: #f6f7fa;
+}
+
+footer a {
+	color: #f6f7fa;
+	display: block;
+	font-size: 13px;
+	margin-bottom: 8px;
+}
+
+footer a:hover {
+	color: #82ca9c;
+}
+
+.form-control {
+	height: 60px;
+	padding-left: 20px;
+	border: none;
+	border-radius: 3px;
+}
+
+.form-control:hover {
+	border: none;
+}
+
+.btn {
+	height: 60px;
+	width: 70px;
+	background-color: #82ca9c;
+	border-radius: 0 3px 3px 0;
+}
+
+.if-spam {
+	color: #57697f;
+	font-size: 12px;
+	width: 85%;
+	margin-top: 10px;
+}
