@@ -1,0 +1,173 @@
+/* Block Main */
+.onboard {
+    padding-bottom: 80px;
+}
+
+.something-new {
+    padding-bottom: 80px;
+
+    &-content {
+        margin-bottom: 30px;
+    }
+
+    p {
+        color: $color-gray;
+    }
+}
+
+/* Image block in color block */
+@mixin block-image() {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @content;
+}
+
+.block {
+    &-wrapper {
+        .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    &-content {
+        padding-bottom: 80px;
+
+        &-pink {
+            background: #f5989d;
+        }
+
+        &-purple {
+            background: #615f7d;
+        }
+
+        &-violet {
+            background: #bd8cbf;
+        }
+
+        &-green {
+            background: #82ca9c;
+        }
+
+        &-our-client {
+            @include block-image();
+            background-image: url('../img/our_client.png');
+        }
+
+        &-sighup-see {
+            @include block-image();
+            background-image: url('../img/sighup_see.png');
+        }
+
+        &-start-img {
+            @include block-image();
+            background-image: url('../img/start_somthing.png');
+        }
+
+        &-text {
+            padding: 10px 10px; 
+        }
+    }
+}
+
+/* Height of color block */
+$class-name: block-content-pink block-content-purple block-content-our-client block-content-violet block-content-green block-content-sighup-see block-content-start-img;
+@each $name in $class-name {
+    .#{$name} {
+        height: 280px;
+    }
+}
+
+/* Block Car */
+.car {
+    @extend %full-image;
+    background-image: url('../img/car.png');
+    height: 874px;
+
+    .banner-title {
+        color: $color-white;
+        position: absolute;
+        bottom: 15%;
+    }
+}
+
+/* Onboard */
+.onboard {
+    background-color: $color-primary;
+    color: $color-white;
+    padding: 120px 0;
+
+    h2 {
+        color: $color-white;
+    }
+}
+
+/* Block Buying */
+.buying {
+    background: $color-white-light;
+    padding: 120px 0;
+
+    .row {
+        padding: 0 25px;
+    }
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #8a9ead;
+        margin-bottom: 25px;
+    }
+
+    .team {
+        padding: 45px 55px;
+        &.active {
+            background: $color-white;
+            box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+        }
+    }
+
+    .legacy {
+        color: $color-white;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 11px;
+        display: inline-block;
+        margin-bottom: 22px;
+        padding: 5px 20px;
+    }
+    
+    .legacy {
+        background-color: #e1e1e1;
+    }
+    
+    .most-popular {
+        @extend .legacy;
+        background-color: #bd8cbf;
+    }
+    
+    .buy-button {
+        background-color: $color-primary;
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 1px;
+        display: block;
+        width: 150px;
+        padding: 14px 22px;
+        border-radius: 3px;
+        margin-bottom: 30px;
+        
+        &:hover {
+          background-color: #67A77D;
+          color: $color-white;
+          border-color: transparent;
+          box-shadow: 2px 4px 8px 0px rgba(46, 61, 73, 0.2);
+        }
+    }
+}
