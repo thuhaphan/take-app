@@ -1,0 +1,39 @@
+/* Footer */
+footer {
+    background-color: #192431;
+    padding: 140px 0 110px;
+
+    h4, p, a {
+        color: $color-white-light;
+    }
+
+    p {
+      font-size: 13px;
+    }
+    
+    a {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 8px;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+}
+
+.form-control {
+    height: 60px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 3px;
+    &:hover {
+      border: none;
+    }
+}
+  
+.if-spam {
+    color: #57697f;
+    font-size: 12px;
+    width: 85%;
+    margin-top: 10px;
+}
